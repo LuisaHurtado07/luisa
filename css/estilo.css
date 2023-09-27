@@ -1,0 +1,281 @@
+body
+{
+	color: brown;
+	margin: 0;
+    height: 700px;
+
+}
+header
+{
+	color: black;
+	font-size: 20%; */
+	padding: 10px;
+	padding-top: 10px;/*borde de la img*/
+    height: 450;
+
+}
+nav
+{
+	background: green; 
+	float: left;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	z-index: 100;
+}
+nav ul li 
+{
+	float: left;
+	font-family: sans-serif; /*fuente*/
+	font-size: 25px; /* tamaño de la letra del encabezado */
+	list-style: none;
+
+}
+
+nav ul li:hover /* color naranja a las letras*/
+{
+	background: orange;
+}
+
+nav ul li a
+{
+	display: block;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+
+}
+
+#img  /*transicion de la img del encabezado*/
+{
+   opacity:1;
+   transition:opacity 4s ease 0.5s;
+}
+
+#img:hover
+{
+   opacity:0;   
+}
+#bienvenidos /* transicion del bienvenidos*/
+{ 
+   transition:left 1.5s;
+
+}
+
+#bienvenidos:hover
+{
+   position:relative;
+   left:400px;
+
+}
+aside
+{
+    float: right;
+    background: #0e1c52;
+    width: 20%;
+    height: 70%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-style: double;
+    border-color: gray;
+    list-style: none;
+    margin-top: 10px;
+    border-radius:20px;
+    overflow: hidden;
+        margin-bottom: 30px;
+
+}
+
+a
+{
+	color: white;
+	font-size: 25px;
+}
+.cambiar:hover
+{
+	color: #f4a905;
+}
+/* Estilos para el pie de página */
+footer {
+    background-color:#f7bf3e ;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    font-size: 20px;
+
+}
+
+li
+{
+	color: black;
+	font-size: 15px;
+	box-shadow: 0px 0px 20px gray;
+}
+
+
+#columnas
+{
+   column-count:4;
+   column-gap:20px;
+   column-rule:4px outset gray;
+   list-style: none;
+   background-color:rgba(0,0,0, 0.4);/*transparencias*/
+
+}
+#col
+{
+	column-count:3;
+    column-gap:20px;
+    column-rule:4px outset gray;
+    list-style: none;
+}
+span b
+{
+    font-size:25px;
+}
+li b 
+{
+	font-size: 20px;
+}
+.Contenedor
+{
+	width: 40%;
+	height: 30%;
+	background-color: cyan;
+	text-align: center;
+	float: below;
+	margin: 5px;
+    color: black;
+    align: center;
+	
+}.circulo {
+    width: 200px; 
+    height: auto; 
+    border-radius: 50%; /* Esto crea un círculo */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde del círculo */
+    float: right;
+}
+
+.circulo img{
+    width: 100%; /* Ajusta la imagen para que llene el círculo */
+    height: auto; 
+}
+
+/* Estilos para el formulario */
+form 
+{
+    max-width: 290px;
+    margin: auto;
+    float: above;
+}
+
+/* Estilo para los campos de entrada */
+.formulario 
+{
+    margin-bottom: 30px;
+}
+
+/* Estilo para las líneas de entrada de texto */
+.Estilo_lineas 
+{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    font-family: sans-serif; 
+}
+
+/* Estilo para las etiquetas */
+label 
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size:20px
+}
+
+/* Estilo para el botón de envío */
+.boton 
+{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    width:200px;
+    height:50px;
+    border:3px solid gray;
+    border-radius:22px;
+            
+}
+
+/* Cambiar el color del botón al pasar el mouse por encima */
+.boton:hover 
+{
+    background-color: red;
+}
+/* Estilos para el contenedor del video */
+.video-container 
+{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+        /* Estilos para el video */
+video 
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+h3
+{
+    color: black;
+    text-shadow: 8px 8px 5px black;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 450;
+
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    height: 450;
+    
+    animation: cambio 10s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    height: 450;
+
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+#editable
+{
+  overflow:auto;
+  font-family: cursive;
+  
+}
